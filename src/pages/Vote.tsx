@@ -8,7 +8,7 @@ import { Contestant } from '../types';
 
 const Vote: React.FC = () => {
   const { voteData, vote } = useVoting();
-  const { contestants, loading, error } = useContestants();
+  const { contestants, loading, error } = useContestants(voteData);
   const [filter, setFilter] = useState<'all' | 'miss' | 'mister'>('all');
   const [selectedContestant, setSelectedContestant] = useState<Contestant | null>(null);
 
@@ -40,19 +40,7 @@ const Vote: React.FC = () => {
 
   const currentIndex = selectedContestant ? filteredContestants.findIndex(c => c.id === selectedContestant.id) : -1;
 
-  const getLeaderboard = () => {
-    return contestants
-      .map(contestant => ({
-        ...contestant,
-        totalVotes: voteData[contestant.id] 
-          ? voteData[contestant.id].upvotes - voteData[contestant.id].downvotes
-          : 0
-      }))
-      .sort((a, b) => b.totalVotes - a.totalVotes)
-      .slice(0, 3);
-  };
-
-  const leaderboard = getLeaderboard();
+  const leaderboard = contestants.slice(0, 3);
 
   if (loading) {
     return (

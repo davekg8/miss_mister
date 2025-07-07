@@ -6,6 +6,7 @@ export interface Contestant {
   description: string;
   category: 'miss' | 'mister';
   votes: number;
+  totalVotes: number;
 }
 
 export interface VoteData {
