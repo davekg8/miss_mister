@@ -16,15 +16,14 @@ const Home: React.FC = () => {
               Miss Mister 2025
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Join us in celebrating beauty, talent, and personality. Vote for your favorite contestants 
-              and help crown the next Miss and Mister champions!
+              Le LSL nous en a fait douter, mais maintenant qu’il est derrière nous, on va enfin savoir qui brille vraiment ! Place aux Miss et Mister de la vraie vie 😍
             </p>
             <Link
               to="/vote"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <Users className="h-5 w-5" />
-              <span>Start Voting</span>
+              <span>Commencer à voter</span>
             </Link>
           </div>
         </div>
@@ -37,9 +36,9 @@ const Home: React.FC = () => {
             <div className="flex justify-center mb-4">
               <Crown className="h-12 w-12 text-purple-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Meet the Contestants</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Découvrez les Candidats</h3>
             <p className="text-gray-600">
-              Get to know our amazing contestants competing for the Miss and Mister titles.
+              Faites connaissance avec nos incroyables candidats en lice pour les titres de Miss et Mister.
             </p>
           </div>
 
@@ -47,9 +46,9 @@ const Home: React.FC = () => {
             <div className="flex justify-center mb-4">
               <Star className="h-12 w-12 text-pink-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Vote for Your Favorites</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Votez pour vos Favoris</h3>
             <p className="text-gray-600">
-              Cast your votes and help decide who deserves to win the coveted titles.
+              Exprimez vos votes et aidez à décider qui mérite de remporter les titres tant convoités.
             </p>
           </div>
 
@@ -57,9 +56,9 @@ const Home: React.FC = () => {
             <div className="flex justify-center mb-4">
               <Trophy className="h-12 w-12 text-blue-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Crown the Winners</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Couronnez les Gagnants</h3>
             <p className="text-gray-600">
-              Join us in celebrating the winners and their incredible journey to the top.
+              Rejoignez-nous pour célébrer les gagnants et leur incroyable parcours vers le sommet.
             </p>
           </div>
         </div>
@@ -69,9 +68,9 @@ const Home: React.FC = () => {
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Vote?</h2>
+            <h2 className="text-3xl font-bold mb-4">Prêt à voter ?</h2>
             <p className="text-xl mb-8 text-purple-100">
-              Your vote matters! Help us choose the next Miss and Mister champions.
+              Votre vote compte ! Aidez-nous à choisir les prochains champions Miss et Mister.
             </p>
             <Link
               to="/vote"
