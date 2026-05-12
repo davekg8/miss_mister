@@ -5,6 +5,11 @@ import { Crown, Users, Trophy, Star } from 'lucide-react';
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+      {/* Announcement Banner */}
+      <div className="bg-purple-600 text-white py-3 px-4 text-center font-bold animate-pulse">
+        📢 Deuxième Édition : 8 Juin 2026 📢
+      </div>
+
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -13,7 +18,7 @@ const Home: React.FC = () => {
               <Crown className="h-24 w-24 text-purple-600" />
             </div>
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-6">
-              Miss Mister 2025
+              Miss Mister 2026
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Le LSL nous en a fait douter, mais maintenant qu’il est derrière nous, on va enfin savoir qui brille vraiment ! Place aux Miss et Mister de la vraie vie 😍
