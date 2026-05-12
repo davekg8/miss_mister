@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <Crown className="h-8 w-8 text-purple-600 group-hover:text-purple-700 transition-colors" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Miss Mister 2025
+              Miss Mister 2026
             </span>
           </Link>
           
